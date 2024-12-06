@@ -4,7 +4,7 @@
 
 # Pulumi 101
 
-# The old way
+### The old way
 ![](static/mouse.png)
 ![](static/keyboard.jpg)
 
@@ -14,7 +14,7 @@ Doing things manually, clicking around on cloud consoles, and typing into termin
 
 :::
 
-# The new way
+### The new way
 
 ![](static/iac.png)
 
@@ -24,7 +24,7 @@ Describe how you want things to be, and let the system make it right
 
 :::
 
-# What is Pulumi?
+### What is Pulumi?
 
 - Write IaC in a common language
 - Wide support for resource types
@@ -38,7 +38,9 @@ Can make your own resources / providers fairly easily
 
 :::
 
-# Compared to Terraform
+# Compared to ...
+
+### Terraform
 
 - More flexible
 
@@ -48,7 +50,7 @@ Can make your own resources / providers fairly easily
 
 :::
 
-# Compared to CloudFormation
+### CloudFormation
 
  - It's multi-cloud
 
@@ -58,7 +60,7 @@ Can make your own resources / providers fairly easily
 
 :::
 
-# Compared to Ansible
+### Ansible
 
 - Apples and Oranges
 
@@ -71,31 +73,31 @@ Can make your own resources / providers fairly easily
 
 # Key Concepts
 
-# Stacks
+### Stacks
 
 - Highest level "Unit" for Pulumi
 - You deploy a Stack
 - Can have multiple deployments per stack
 
-# Resources
+### Resources
 
 - Represents a single "thing"
 - e.g. An S3 bucket, a VM, a password, or a template file
 
-# Component Resources
+### Component Resources
 
 - Represents a collection of resources
 - For reusibility 
 
-# Providers
+### Providers
 
 - Turn a resource definition into reality
 
-# Dynamic Resources / Providers 
+### Dynamic Resources / Providers 
 
 - Custom providers and resources
 
-# State Management
+### State Management
 
 - Where the current state of your system is stored
 - Different from Terraform
@@ -111,7 +113,7 @@ Can make your own resources / providers fairly easily
 
 # Getting Started
 
-# Install Pulumi
+### Install Pulumi
 
 - From your package manager
   - Homebrew
@@ -119,13 +121,13 @@ Can make your own resources / providers fairly easily
   - Pacman
 - From the [website](https://www.pulumi.com/docs/iac/download-install/)
 
-# Set up your state management
+### Set up your state management
 
 - Local filesystem: `pulumi login --local`
 - S3: `pulumi login s3://<bucket-name>`
 - Pulumi Cloud: `pulumi login`
 
-# Init your project
+### Init your project
 
 - `mkdir my-project`
 - `cd my-project`
@@ -135,7 +137,7 @@ Can make your own resources / providers fairly easily
 
 # Project Structure
 
-## `index.ts`
+### `index.ts`
 
 ```
 import * as pulumi from "@pulumi/pulumi";
@@ -156,7 +158,7 @@ export const bucketName = bucket.id;
 
 :::
 
-## `Pulumi.yaml`
+### `Pulumi.yaml`
 
 ```
 name: aws-example
@@ -177,7 +179,7 @@ config:
 
 :::
 
-## `Pulumi.dev.yaml`
+### `Pulumi.dev.yaml`
 
 ```
 encryptionsalt: v1:/rfAG+6eIEo=:v1:B+XvePLoOv6fs7eE:Bal8OFpnxH+fXO98vWy2xCbvGUm7Zg==
@@ -194,7 +196,7 @@ config:
 
 # Deploying
 
-## Preview
+### Preview
 
 - `pulumi preview`
 
@@ -205,7 +207,7 @@ config:
 
 :::
 
-## Up
+### Up
 
 - `pulumi up`
 
@@ -218,7 +220,7 @@ config:
 
 :::
 
-## Down 
+### Down 
 
 - `pulumi down`
 
@@ -228,15 +230,13 @@ config:
 
 :::
 
-# Practical AWS Example
+# Examples
 
-# Practical Homelab Example
+### AWS
 
-# Q&A and Further Learning
-- Common questions
-- Recommended learning resources
-- Community forums and support channels
-- Future of infrastructure as code
+### Homelab
+
+# Questions 
 
 ---
 
