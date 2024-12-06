@@ -1,4 +1,4 @@
 encryptionsalt: v1:/rfAG+6eIEo=:v1:B+XvePLoOv6fs7eE:Bal8OFpnxH+fXO98vWy2xCbvGUm7Zg==
 config:
-aws-example:environment: dev
+  aws-example:environment: prod
   aws:region: us-east-1

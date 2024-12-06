@@ -7,7 +7,13 @@
 ---
 
 ### The old way
+
 ![](static/mouse.png)
+
+---
+
+### The old way
+
 ![](static/keyboard.jpg)
 
 ::: notes
@@ -290,7 +296,11 @@ config:
 
 ### AWS
 
+---
+
 ### Homelab
+
+---
 
 # Questions 
 
