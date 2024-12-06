@@ -16,6 +16,8 @@ Doing things manually, clicking around on cloud consoles, and typing into termin
 
 :::
 
+---
+
 ### The new way
 
 ![](static/iac.png)
@@ -25,6 +27,8 @@ Doing things manually, clicking around on cloud consoles, and typing into termin
 Describe how you want things to be, and let the system make it right
 
 :::
+
+---
 
 ### What is Pulumi?
 
@@ -40,6 +44,8 @@ Can make your own resources / providers fairly easily
 
 :::
 
+---
+
 # Compared to ...
 
 ---
@@ -54,6 +60,8 @@ Can make your own resources / providers fairly easily
 
 :::
 
+---
+
 ### CloudFormation
 
  - It's multi-cloud
@@ -63,6 +71,8 @@ Can make your own resources / providers fairly easily
 - You're not limited to just AWS
 
 :::
+
+---
 
 ### Ansible
 
@@ -75,6 +85,8 @@ Can make your own resources / providers fairly easily
 
 :::
 
+---
+
 # Key Concepts
 
 ---
@@ -85,23 +97,33 @@ Can make your own resources / providers fairly easily
 - You deploy a Stack
 - Can have multiple deployments per stack
 
+---
+
 ### Resources
 
 - Represents a single "thing"
 - e.g. An S3 bucket, a VM, a password, or a template file
+
+---
 
 ### Component Resources
 
 - Represents a collection of resources
 - For reusibility 
 
+---
+
 ### Providers
 
 - Turn a resource definition into reality
 
+---
+
 ### Dynamic Resources / Providers 
 
 - Custom providers and resources
+
+---
 
 ### State Management
 
@@ -117,6 +139,8 @@ Can make your own resources / providers fairly easily
 
 :::
 
+---
+
 # Getting Started
 
 ---
@@ -129,11 +153,15 @@ Can make your own resources / providers fairly easily
   - Pacman
 - From the [website](https://www.pulumi.com/docs/iac/download-install/)
 
+---
+
 ### Set up your state management
 
 - Local filesystem: `pulumi login --local`
 - S3: `pulumi login s3://<bucket-name>`
 - Pulumi Cloud: `pulumi login`
+
+---
 
 ### Init your project
 
@@ -142,6 +170,8 @@ Can make your own resources / providers fairly easily
 - List Templates `pulumi new -l`
 - AWS Project `pulumi new aws-typescript`
 - Minimal Project `pulumi new typescript`
+
+---
 
 # Project Structure
 
@@ -168,6 +198,8 @@ export const bucketName = bucket.id;
 
 :::
 
+---
+
 ### `Pulumi.yaml`
 
 ```
@@ -189,6 +221,8 @@ config:
 
 :::
 
+---
+
 ### `Pulumi.dev.yaml`
 
 ```
@@ -203,6 +237,8 @@ config:
 - e.g. dev, prod, release, testing, etc.
 
 :::
+
+---
 
 # Deploying
 
@@ -219,6 +255,8 @@ config:
 
 :::
 
+---
+
 ### Up
 
 - `pulumi up`
@@ -232,6 +270,8 @@ config:
 
 :::
 
+---
+
 ### Down 
 
 - `pulumi down`
@@ -241,6 +281,8 @@ config:
 - Tear down a stack
 
 :::
+
+---
 
 # Examples
 
