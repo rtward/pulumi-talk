@@ -4,6 +4,8 @@
 
 # Pulumi 101
 
+---
+
 ### The old way
 ![](static/mouse.png)
 ![](static/keyboard.jpg)
@@ -40,6 +42,8 @@ Can make your own resources / providers fairly easily
 
 # Compared to ...
 
+---
+
 ### Terraform
 
 - More flexible
@@ -72,6 +76,8 @@ Can make your own resources / providers fairly easily
 :::
 
 # Key Concepts
+
+---
 
 ### Stacks
 
@@ -113,6 +119,8 @@ Can make your own resources / providers fairly easily
 
 # Getting Started
 
+---
+
 ### Install Pulumi
 
 - From your package manager
@@ -136,6 +144,8 @@ Can make your own resources / providers fairly easily
 - Minimal Project `pulumi new typescript`
 
 # Project Structure
+
+---
 
 ### `index.ts`
 
@@ -196,6 +206,8 @@ config:
 
 # Deploying
 
+---
+
 ### Preview
 
 - `pulumi preview`
@@ -231,6 +243,8 @@ config:
 :::
 
 # Examples
+
+---
 
 ### AWS
 
