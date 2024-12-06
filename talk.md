@@ -4,29 +4,70 @@
 
 # Pulumi 101
 
-# Intro to Infrastructure as Code (IaC)
-- Definition of Infrastructure as Code
-- Traditional infrastructure management challenges
-- How IaC solves these challenges
-- Brief history and evolution of IaC tools
+# The old way
+![](static/mouse.png)
+![](static/keyboard.jpg)
 
 ::: notes
 
-Some speaker notes here
+Doing things manually, clicking around on cloud consoles, and typing into terminals
 
 :::
 
-## What is Pulumi?
-- Core definition and mission
-- Key differentiators from other IaC tools
-- Support for multiple programming languages
-- Cloud-agnostic infrastructure management
+# The new way
 
-## Comparison with Other IaC Tools
-- Terraform
-- CloudFormation
-- Ansible
-- Pros and cons of Pulumi approach
+![](static/iac.png)
+
+::: notes
+
+Describe how you want things to be, and let the system make it right
+
+:::
+
+# What is Pulumi?
+
+- Write IaC in a common language
+- Wide support for resource types
+- Supports easy "dynamic" resource types
+
+::: notes
+
+Supports Python, TypeScript, C#, and Go
+Supports Terraform providers so you can leverage that ecosystem
+Can make your own resources / providers fairly easily
+
+:::
+
+# Compared to Terraform
+
+- More flexible
+
+::: notes
+
+- You have a full programming language available instead of a DSL
+
+:::
+
+# Compared to CloudFormation
+
+ - It's multi-cloud
+
+::: notes
+
+- You're not limited to just AWS
+
+:::
+
+# Compared to Ansible
+
+- Apples and Oranges
+
+::: notes
+
+- Ansible is primarily for manageing machines
+- Pets vs Cattle
+
+:::
 
 # Key Pulumi Concepts
 
